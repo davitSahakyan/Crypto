@@ -14,10 +14,6 @@ class Search extends React.Component{
     }
   }
 
-  componentDidMount(){
-    this.handleRedirect()
-  }
-
 
   handleChange = (event) =>{
       const searchQuery = event.target.value
