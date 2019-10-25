@@ -21,7 +21,7 @@ const Table = (props) =>{
           <tbody className='Table-body'>
               {props.currencies.map( currency =>{
                 return(
-                  <tr key={currency.id} onClick={()=> props.history.push(`/currency/${currency.id}`)}>
+                  <tr key={currency.id} onClick={()=> props.history.push(`currency/${currency.id}`)}>
                     <td> <span className='Table-rank'> {currency.rank} </span> {currency.name} </td>
                     <td> <span className='Table-dollar'> $ </span> {currency.price} </td>
                     <td> <span className='Table-dollar'> $  </span> {currency.marketCap} </td>

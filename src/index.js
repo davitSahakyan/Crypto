@@ -13,7 +13,9 @@ const App = () =>{
     <BrowserRouter>
        <Header />
           <Switch>
+             
              <Route  path='/' component={List} exact /> 
+             <Route  path='/Crypto' component={List} exact /> 
              <Route path='/currency/:id' component={Detail} exact />
              <Route component={NotFound} exact/>
           </Switch>
